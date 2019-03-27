@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<form id="form">
+    <label for="urlCollect">Enter the link to the site you want to check</label>
+    <textarea id="urlCollect" class="js-urlCollect" placeholder="Your links"></textarea>
+    <label for="key">Enter your API key, if you use it</label>
+    <input id="key" class="js-addKey" type="text" placeholder="Your key">
+    <input type="submit" value="Submit" class="btn js-submit">
+</form>
+
+<div class="js-tableData">
+    <table>
+        <thead>
+        <tr>
+            <th>CHECKED SITE</th>
+            <th>DESKTOP SCORE</th>
+            <th>FIRST CONTENTFUL PAINT (DESKTOP)</th>
+            <th>TIME TO INTERACTIVE (DESKTOP)</th>
+            <th>MOBILE SCORE</th>
+            <th>FIRST CONTENTFUL PAINT (MOBILE)</th>
+            <th>TIME TO INTERACTIVE (MOBILE)</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<input type="button" class="btn js-btnExport" value="Export">
+
+<script src="jquery-3.1.1.min.js"></script>
+<script src="scripts.js"></script>
+
+</body>
+</html>

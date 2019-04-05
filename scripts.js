@@ -62,6 +62,7 @@
                             text: msg.lighthouseResult.audits['interactive'].displayValue
                         })
                     ).appendTo('tbody');
+                    console.table(msg.lighthouseResult.audits);
                 });
 
             }, function (fail) {
